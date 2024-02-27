@@ -12,5 +12,7 @@ Since the efficiency of lip reading is approximately of 30%, i.e., only approxim
 
 
 My initial steps:
+
 •	Creation of the dataset. This includes scrapping the internet for images of each sign of the alphabet 
+
 •	 
