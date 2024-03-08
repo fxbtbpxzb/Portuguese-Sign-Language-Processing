@@ -1,7 +1,8 @@
 # Portuguese Sign Language Processing
 ## Image Processing Project
 
-![image](https://github.com/fxbtbpxzb/Portuguese-Sign-Language-Processing/assets/91330072/652c7ee6-2781-487d-b71c-478b569f1343)
+![A (1)](https://github.com/fxbtbpxzb/Portuguese-Sign-Language-Processing/assets/91330072/12676feb-7eae-4cd7-beb3-8b786fec6c83)
+
 
 Portuguese sign language is one of the three official languages in Portugal, however, on a study conducted in Polytechnic of Porto, only 15% of the students knew sign language. This was my motivation to create this project. Some thesis and projects have been conducted on this topic, but since it’s a very appealing and rich in possibilities subject, I decided to have my go with it. 
 
