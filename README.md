@@ -17,3 +17,31 @@ Steps:
   - **Model Creation**: CNN
   - **Removing Bad Training Data**: Check what kind of images might be causing these issues while training the classifier.
   - **Model Evaluation**: Accuracy and Loss
+
+
+## Creation of the dataset
+
+Using the site [**Spread The Sign**](https://www.spreadthesign.com/pt.pt/alphabet/30/) as a reference for the signs the dataset was created the following way:
+  - Four photos for each "background":
+    - Normal;
+    - Approximated;
+    - More to the left;
+    - More to the side.
+  - Do both left and right hand.
+
+By background I mean, different background, clothes, closeness, and lighting. 
+
+Example for the letter **J**:
+![Example of DataSet](https://github.com/fxbtbpxzb/Portuguese-Sign-Language-Processing/assets/91330072/87dc761e-5d53-4ac1-a956-2befe8e44bce)
+
+In general, when it comes to Machine Learning, the richer your dataset, the better your model performs. The number of images should be similar across classes in order to ensure the balancing of the dataset. 
+It is hard to say how big the dataset should initially be so i will start with 100 for each hand. This means 25 different backgrounds.
+
+Things to be accounted:
+  - Some of the signs have moviments. I will be doing the last movement of the sign.. I will be doing the last movement of the sign.
+  - As we say in Portuguese "falta de jeitinho". I have never learned sign language so some of the signs, even though I try my best, may not look consistent or even 100% correct, which can affect the models performance.
+
+
+The directories are divided in Left and Right, for each there's a folder for each letter. Additionally there's a Train, Validation and Test folder and for each there's a folder for each letter. 
+
+## Augmentation
