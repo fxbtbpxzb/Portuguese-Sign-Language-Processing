@@ -12,10 +12,12 @@ However, I wanted a better way to help a person who doesn’t know sign language
 Since the efficiency of lip reading is approximately of 30%, i.e., only approximately 30% of the information is captured by a receiver used to lip reading, and almost 0% who doesn’t know anything about sign language will understand it, this could be a starting point to learning and maybe memorizing sign language. This code could possibly also turn into a game where the app asks for the player to sign, ex.: ‘A’ and the player has to sign the letter and the game would tell them if it’s right or wrong.  
 
 Steps:
-  - **Creation of the dataset**: This includes scrapping the internet for images of each sign of the alphabet and creating my own. 
+  - **Creation of the dataset**:
+      - Scrapping the internet for images of each sign of the alphabet;
+      - Creating my own images. 
   - **Augmentation**: A high-quality training dataset enhances accuracy and speed. Since I am creating my own dataset, it’s hard to tell prior to model building what size of the dataset would the optimal. Augmentation can help with this problem.
   - **Model Creation**: CNN
-  - **Removing Bad Training Data**: Check what kind of images might be causing these issues while training the classifier.
+  - **Removing Bad Training Data**: Check what kind of images might be causing performing issues while predicting, if any. This step is to also to make sure that the model is not only predicting correctly a certain "type" of images.
   - **Model Evaluation**: Accuracy and Loss
 
 
@@ -38,10 +40,25 @@ In general, when it comes to Machine Learning, the richer your dataset, the bett
 It is hard to say how big the dataset should initially be so i will start with 100 for each hand. This means 25 different backgrounds.
 
 Things to be accounted:
-  - Some of the signs have moviments. I will be doing the last movement of the sign.. I will be doing the last movement of the sign.
+  - Some of the signs have moviments. I will be doing the last movement of the sign. I will be doing the last movement of the sign.
   - As we say in Portuguese "falta de jeitinho". I have never learned sign language so some of the signs, even though I try my best, may not look consistent or even 100% correct, which can affect the models performance.
 
 
 The directories are divided in Left and Right, for each there's a folder for each letter. Additionally there's a Train, Validation and Test folder and for each there's a folder for each letter. 
 
 ## Augmentation
+## Model Creation
+## Removing Bad Training Data
+## Model Evaluation
+
+Even though it's the **Model Evaluation** is my last step, model logging and performance tracking was my second biggest worry for this project.
+- When should I save the model? When images are added? Or only when the architecture is changed?
+- Should I save only the model weights or should I save the whole architecture?
+- Do I have memory to save the architecture in my computer? If I only save the weights, will I be able to easily load it and continue testing the model?
+- What measures should I keep tracking to record every model's performance?
+
+Here is what I did:
+### Model Logging
+<img src="https://github.com/fxbtbpxzb/Portuguese-Sign-Language-Processing/assets/91330072/1bb78d03-e05b-4db4-97fa-65c4f02bc878.png" width=50% height=50%>
+
+### Performance tracking
